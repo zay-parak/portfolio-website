@@ -1,0 +1,551 @@
+/* Default browser style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+
+/* My custom colour variables */
+:root {
+    --background-colour: #ffffff;
+    --background-colour2: #FDCFFA;
+    --text-colour: #000000;
+    --main-colour: #9B5DE0;
+}
+
+/* Hides the horizontal scrollbar */
+html {
+    overflow-x: hidden;
+}
+
+/* The main background colour and text colour */
+body {
+    background: var(--background-colour);
+    color: var(--text-colour);
+}
+
+/* The minimum height and the padding for every section */
+section {
+    min-height: 100vh;
+    padding: 100px 90px 20px;
+}
+
+/* HEADER SECTION - Navbar */
+
+/* Navbar stays fixed at the top */
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: var(--main-colour);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease;
+}
+
+/* My logo styliing */
+.logo {
+    font-size: 30px;
+    color: var(--background-colour);
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/* Navbar link styling */
+.navbar a {
+    font-size: 19px;
+    color: var(--background-colour);
+    margin-left: 40px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--text-colour);
+}
+
+/* HOME SECTION */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* My profile image styling */
+.home-img img {
+    width: 35vh;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-colour);
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+/* Glow effect for my profile picture */
+.home-img img:hover {
+    box-shadow: 0 0 25px var(--main-colour),
+        0 0 35px var(--main-colour),
+        0 0 45px var(--main-colour);
+}
+
+/* Homepage content */
+.home-content {
+    margin-left: 50px;
+}
+
+.home-content h3 {
+    font-size: 37px;
+    font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 20px;
+}
+
+/* This allows my headings to be double coloured */
+span {
+    color: var(--main-colour);
+}
+
+.home-content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content p {
+    font-size: 16px;
+}
+
+/* Social media tags */
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background: transparent;
+    border: 2px solid var(--main-colour);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-colour);
+    margin: 30px 15px 30px 0;
+    transition: 0.3s ease-in-out;
+}
+
+.social-media a:hover {
+    transform: scale(1.2) translateY(-10px);
+    background-color: var(--main-colour);
+    color: var(--background-colour);
+}
+
+/* View my work button styling */
+.home-content .btn {
+    display: inline-block;
+    padding: 10px 28px;
+    background: var(--main-colour);
+    border-radius: 40px;
+    box-shadow: none;
+    font-size: 16px;
+    color: var(--background-colour);
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.home-content .btn:hover {
+    transform: scale(1.2) translateY(-10px);
+}
+
+/* ABOUT SECTION */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: var(--background-colour2);
+}
+
+/* My about section profile picture */
+.about-img img {
+    width: 25vw;
+    border: 2px solid var(--main-colour);
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-colour);
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.about-img img:hover {
+    box-shadow: 0 0 25px var(--main-colour),
+        0 0 35px var(--main-colour),
+        0 0 45px var(--main-colour);
+}
+
+/* For all my headings on my website */
+.heading {
+    font-size: 60px;
+    text-align: center;
+}
+
+/* My about section content styling */
+.about-content {
+    padding: 0 40px;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 30px;
+}
+
+.about-content p {
+    font-size: 19px;
+    margin: 20px 0 30px;
+}
+
+/* SKILLS SECTION */
+.skills h2 {
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+/* For all my skills */
+.skills-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Each skill box styling */
+.skills-container .skills-box {
+    flex: 1 1 300px;
+    background: var(--background-colour2);
+    padding: 60px 20px 60px;
+    border-radius: 20px;
+    text-align: center;
+    border: 3px solid var(--background-colour);
+    transition: 0.3s ease;
+}
+
+/* The hover animation on my skills */
+.skills-container .skills-box:hover {
+    border-color: var(--main-colour);
+    transform: scale(1.02);
+}
+
+.skills-box i {
+    font-size: 70px;
+    color: var(--main-colour);
+}
+
+.skills-box h3 {
+    font-size: 26px;
+}
+
+.skills-box p {
+    font-size: 16px;
+    margin: 10px 0 30px;
+}
+
+/* PORTFOLIO SECTION */
+.portfolio {
+    background: var(--background-colour2);
+    padding: 100px 80px;
+}
+
+.portfolio .heading {
+    margin-bottom: 40px;
+}
+
+/* Container for all my projects */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Each project box */
+.project-box {
+    position: relative;
+    background: var(--background-colour);
+    border: 3px solid var(--main-colour);
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    width: 380px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    padding: 15px;
+}
+
+/* Project picture styling */
+.project-box img {
+    width: 290px;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+
+.project-box h3 {
+    margin-top: 15px;
+    font-size: 22px;
+    color: var(--main-colour);
+}
+
+/* Description for my projects - is hidden by default */
+.project-box .description {
+    font-size: 16px;
+    color: var(--text-colour);
+    margin-top: 15px;
+    display: none;
+    line-height: 1.4;
+}
+
+/* Hover effect — it expands and shows the description of my project*/
+.project-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-colour);
+    z-index: 2;
+}
+
+.project-box:hover h3 {
+    display: none;
+}
+
+.project-box:hover .description {
+    display: block;
+}
+
+/* CONTACT SECTION */
+.contact {
+    background: linear-gradient(rgba(155, 93, 224, 0.4), rgba(253, 207, 250, 0.4)),
+        url("images/flower-silhouette.webp") center/cover no-repeat;
+    padding: 90px 32px;
+    text-align: center;
+    color: var(--text-colour);
+}
+
+/* My contact info container */
+.contact-info {
+    max-width: 600px;
+    border: 3px solid var(--main-colour);
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 29px;
+    line-height: 1.6;
+    margin-top: 150px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 19px;
+}
+
+.contact-info .info i {
+    color: var(--main-colour);
+}
+
+/* My social media links */
+.social-links a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background: transparent;
+    border: 2px solid var(--main-colour);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-colour);
+    margin: 30px 15px 30px 0;
+    transition: 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    transform: scale(1.2) translateY(-10px);
+    background-color: var(--main-colour);
+    color: var(--background-colour);
+}
+
+/* FOOTER SECTION */
+.footer {
+    position: relative;
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--background-colour2);
+}
+
+/* My social media links */
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--main-colour);
+}
+
+.footer .social a {
+    font-size: 25px;
+    color: var(--main-colour);
+    border: 2px solid var(--main-colour);
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease;
+}
+
+.footer .social a:hover {
+    transform: scale(1.2) translateY(-10px);
+    background-color: var(--main-colour);
+    color: var(--background-colour);
+}
+
+/* Copyright information */
+.footer .copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--text-colour);
+}
+
+/* Responsive Code */
+/* For bigger screens like an ipad */
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+/* For medium sized screeeens */
+@media (max-width: 991px) {
+    .header {
+        padding: 20px 3%;
+    }
+
+    section {
+        padding: 100px 3%;
+    }
+
+    .contact {
+        width: 100%
+    }
+
+    .footer {
+        padding: 20px 3%;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 225px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: var(--main-colour);
+        transition: all 0.5s ease;
+        backdrop-filter: blur(10px);
+    }
+
+    .navbar a {
+        display: block;
+        padding: 17px;
+        font-size: 22px;
+    }
+
+    /* Displays everyhting vertically */
+    .home {
+        flex-direction: column;
+    }
+
+    .home-content h3 {
+        font-size: 26px;
+    }
+
+    .home-content h1 {
+        font-size: 50px;
+    }
+
+    .home-content {
+        order: 2;
+        margin-left: 10px;
+    }
+
+    .home-img img {
+        width: 70vw;
+        margin-top: 40px;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .about-img img {
+        width: 70vw;
+        margin-top: 40px;
+    }
+
+    .skills h2 {
+        margin-bottom: 30px;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 617px) {
+    html {
+        font-size: 50%;
+    }
+
+    .home-img img {
+        width: 70vw;
+        margin-top: 80px;
+    }
+
+    .about-img img {
+        width: 70vw;
+        margin-top: 40px;
+    }
+
+    /* Allows my projects to display vertically */
+    .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-box img {
+        width: 80%;
+    }
+
+    .project-box {
+        width: 99%;
+    }
+
+    .contact-info {
+        font-size: 17px;
+    }
+}

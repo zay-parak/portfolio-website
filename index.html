@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- The <head> section contains the metadata and links to external resources for my website (css, fonts and icon libraries) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boxicons library for icons used in my website -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Roboto Font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Link to the external CSS stylesheet for my website -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- My website title which can be seen on the browser tab -->
+    <title>Tasmiyah Bharoochi</title>
+
+    <!-- 
+    ALL MY REFERENCES ARE AT THE BOTTOM 
+    -->
+</head>
+
+<body>
+    <!--
+    -------------- 
+    HEADER SECTION
+    --------------
+    The header section contains the navigation bar and logo. 
+    This is stuck at the top of the page so users can navigate to different parts of my website.
+    -->
+    <header class="header">
+        <!-- My website logo which is a link back to the home section when clicked -->
+        <a href="#home" class="logo">Tasmiyah Bharoochi</a>
+
+        <!-- Navigation bar with links to each section of my Website -->
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!--
+    ------------
+    HOME SECTION
+    ------------
+    The home section is the landing page of my website.
+    It displays my profile picture, description and a few social
+    -->
+    <section class="home" id="home">
+        <!-- Profile image -->
+        <div class="home-img">
+            <img src="images/profile-photo.webp" alt="Tasmiyah Bharoochi Profile Photo">
+        </div>
+
+        <!-- My Introduction Information -->
+        <div class="home-content">
+
+            <h3>Hello, I'm</h3>
+            <h1>Tasmiyah Bharoochi</h1>
+            <h3>And I'm a <span class="text">Digital Design Student</span></h3>
+            <p>Second-year student at the University of Johannesburg enrolled in the Department of Multimedia,
+                passionate about creating digital experiences through design,
+                animation and interactive media.
+            </p>
+
+            <!-- Social Media Links -->
+            <div class="social-media">
+                <a href="https://www.instagram.com/tas_bharoochi/"><i class='bx bxl-instagram'></i></a>
+                <a href="https://za.linkedin.com/"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+            </div>
+
+            <!-- Button so users can go directly to my portfolio -->
+            <a href="#portfolio" class="btn">View my work</a>
+        </div>
+    </section>
+
+    <!--
+    -------------
+    ABOUT SECTION
+    -------------
+    My background information, interests, design philosophy and personal inspiration.
+    -->
+    <section class="about" id="about">
+
+        <!-- My about content information -->
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>I'm a <span>Digital Design Student</span></h3>
+            <!-- A paragraph about me -->
+            <p>Hi, I'm Tasmiyah Bharoochi, a Digital Media Design Student dedicated to creating impactful visuals and
+                interactive solutions.
+                I'm deeply interested in how design connects people and ideas, and I aim to create digital experiences
+                that are both visually appealing and meaningful.
+                My work blends creativity and strategy: drawing inspiration from marketing principles and user-centered
+                design to craft solutions that are clear,
+                engaging, and effective. I'm building my expertise in UX and UI design,
+                with the goal of developing intuitive interfaces that make every user interaction feel effortless.
+            </p>
+
+            <p>When I'm not designing, you'll probably find me outdoors, hiking, exploring new places,
+                or enjoying a good cup of coffee while sketching ideas for my next project.</p>
+        </div>
+
+        <!-- My about image -->
+        <div class="about-img">
+            <img src="images/profile-photo.webp" alt="Tasmiyah Bharoochi About Photo">
+        </div>
+    </section>
+
+    <!--
+    --------------
+    SKILLS SECTION
+    --------------
+    Displays my core and technical skills.
+    I made use of a description and relavent icon.
+    -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="skills-container">
+            <!-- Skill 1: Adobe Suite -->
+            <div class="skills-box">
+                <!-- An Adobe Suite Icon -->
+                <i class='bx bxl-adobe'></i>
+
+                <h3>Adobe Suite</h3>
+                <p>Proficient in Photoshop, Illustrator, Premiere pro and InDesign for graphic assets and branding
+                    projects.
+                    Good foundational understanding and application skills in Adobe After Effects for motion graphics
+                    and video editing.</p>
+            </div>
+
+            <!-- Skill 2: Web Development -->
+            <div class="skills-box">
+                <i class='bx bx-code'></i>
+                <h3>Web Development</h3>
+                <p>I have a solid understanding of HTML and CSS, including modern responsive design principles.
+                    Experience with WordPress for content management and site development.
+                    Actively planning to incorporate JavaScript into my skill set in the coming year.</p>
+            </div>
+
+            <!-- Skill 3: UI/UX Design -->
+            <div class="skills-box">
+                <i class='bx bx-palette'></i>
+                <h3>UI/UX Design</h3>
+                <p>Proficient in industry standard tools like Figma for prototyping and user interface design.
+                    Experienced in the full design lifecycle, including user research, persona creation, wireframing,
+                    usability testing, and establishing design systems and style guides for brand and visual
+                    consistency.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--
+    ----------------
+    PORTFOLIO SECTION
+    ----------------
+    Showcases all my projects I have completed.
+    Includes a name, image and description of each project.
+    -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">My <span>Portfolio</span></h2>
+
+        <div class="portfolio-container">
+            <!-- Project 1 -->
+            <div class="project-box">
+                <img src="images/gautrain-site-map.webp" alt="Project 1 image">
+                <h3>Usability Assignment - Gautrain Site Map</h3>
+                <p class="description">For this usability assignment,
+                    I analyzed the Gautrain website to identify issues affecting its user experience and interface
+                    design.
+                    The focus was on evaluating aspects such as navigation, readability, layout consistency,
+                    and overall accessibility.
+                    I created a detailed site map to propose an improved structure.
+                </p>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-box">
+                <img src="images/game-mockup.webp" alt="Project 2 image">
+                <h3>Game Design Assignment - Planet Pals Game Mockup</h3>
+                <p class="description">For this game design assignment,
+                    Planet Pals is a cooperative digital adventure game that allows players to think
+                    deeply about their influence on the more-than-human world.
+                    The primary goal is for players to work together to heal these ecosystems and learn about
+                    interdependence and sustainability.
+                </p>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-box">
+                <img src="images/islamic-relief-web-mockup.webp" alt="Project 3 image">
+                <h3>Web Design Assignment - Islamic Relief Website Mockup</h3>
+                <p class="description">My mock-up will retain the core message but present it with new visuals and a
+                    redesigned layout that enhances the navigation experience by repositioning certain functions for
+                    improved accessibility.
+                </p>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-box">
+                <img src="images/logo-design.webp" alt="Project 4 image">
+                <h3>Logo Design Assignment - Community Platform Logo Design</h3>
+                <p class="description">The logo is hand drawn, doodle style with the name surrounded by chaotic,
+                    spontaneous shapes and splatters. The typography is bold, rounded, and slightly imperfect.
+                    The logo serves as the visual anchor for the entire brands aesthetic direction.
+                </p>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-box">
+                <img src="images/productivity-app-wire-frame.webp" alt="Project 5 image">
+                <h3>App Design Assignment - Wire Frames for Productivity App</h3>
+                <p class="description">This assignment outlines the design and concept for a
+                    Productivity App focused on helping individuals who
+                    struggle with time management, need motivation, or
+                    require accountability for their daily and weekly goals.
+                </p>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-box">
+                <img src="images/restaurant-web-mockup.webp" alt="Project 6 image">
+                <h3>Web Development Assignment - Young Restaurant Website</h3>
+                <p class="description">I developed a complete, yet streamlined, WordPress website for Young Restaurant,
+                    built around a charming and cute aesthetic.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--
+    ---------------
+    CONTACT SECTION
+    ---------------
+    Displays my contact details in case someone wants to contact me.
+    Displays my phone number, email and location.
+    -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <!-- All my contact information -->
+        <div class="contact-info">
+            <div class="info" id="info">
+                <p><i class='bx bx-phone'></i> 083 999 4621</p>
+                <p><i class='bx bx-envelope'></i> tasbharoochi@gmail.com</p>
+                <p><i class='bx bx-map'></i> Johannesburg, South Africa</p>
+            </div>
+            <!-- My social media links -->
+            <div class="social-links">
+                <a href="https://www.instagram.com/tasbharoochi/"><i class='bx bxl-instagram'></i></a>
+                <a href="https://za.linkedin.com/"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--
+    --------------
+    FOOTER SECTION
+    --------------
+    Appears at the bottom of my webpage.
+    It contains my social links as well as copyright information.
+    -->
+    <footer class="footer">
+        <!-- Social media links -->
+        <div class="social">
+            <a href="https://www.instagram.com/tasbharoochi/"><i class='bx bxl-instagram'></i></a>
+            <a href="https://za.linkedin.com/"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+        </div>
+        <!-- Copyright information -->
+        <p class="copyright">
+            &copy;Tasmiyah Bharoochi - All Rights Reserved
+        </p>
+    </footer>
+</body>
+
+</html>
+
+<!-- 
+----------
+REFERENCES
+----------
+INSPIRATION - Got ideas for my website: https://www.portfoliobox.com/examples, https://mycodelesswebsite.com/student-portfolio-websites
+ICONS - Boxicons: https://boxicons.com
+FONT - Roboto: https://fonts.google.com/specimen/Roboto
+COLOUR - Colour hex codes for webpage: https://colorhunt.co
+BACKGROUND IMAGE: https://www.freepik.com/photos/flower-line-frame/7
+IMAGE CONVERSION - From png and jpeg to webp: https://cloudconvert.com
+HTML AND CSS HELP - Used w3schools to learn new concepts: https://www.w3schools.com
+RESPONSIVENESS - Learnt how to use media queries: https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+-->
